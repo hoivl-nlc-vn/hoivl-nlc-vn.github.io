@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnamese HEP Physicists Abroad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f4f4f4;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            display: none;
+        }
+        h2 {
+            color: #0073e6;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+        li {
+            background: #0073e6;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #passwordSection {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        input, button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            var password = document.getElementById("password").value;
+            if (password === "ivnheps") {  // Change to your preferred password
+                document.getElementById("container").style.display = "block";
+                document.getElementById("passwordSection").style.display = "none";
+            } else {
+                alert("Incorrect password. Try again.");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <div id="passwordSection">
+        <h2>Enter Password to Access</h2>
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Submit</button>
+    </div>
+
+    <div class="container" id="container">
+        <h2>Vietnamese HEP Physicists Abroad</h2>
+        <ul>
+            <li><a href="https://cms.fnal.gov/nhan-tran/" target="_blank">Dr. Nhan Tran, Fermilab, US: Collider physics (CMS/ATLAS)</a></li>
+            <li><a href="https://scholar.google.com/citations?user=AzPT3ZMAAAAJ&hl=en" target="_blank">Dr. Nam Tran, Boston Univ., US: g-2</a></li>
+            <li><a href="https://scholar.google.com/citations?user=HAkGO7UAAAAJ&hl=en" target="_blank">Dr. Dung Phan, The Univ. of Texas at Austin</a></li>
+            <li>Mr. Duc Hoang, Grad at MIT, US/ CERN fellow: (ATLAS?) + Machine Learning</li>
+            <li><a href="https://www.linkedin.com/in/nhduongvn/" target="_blank">Dr. Duong Nguyen (was in D0/ CMS)</a></li>
+            <li>Dr. Phuoc Trung (was in MINERvA)</li>
+            <li>Dr. Nguyen Quoc Viet, LLR, IN2P3, France, T2K</li>
+            <li>Dr. Chau Thien Nhan, Brussels U., KM3NET</li>
+            <li>Dr. Chau Minh Huong, Virginia Univ., USA</li>
+            <li><a href="https://www2.kek.jp/qup/member/bui.html" target="_blank">Dr. Khai Bui, QUP, KEK, JP</a></li>
+            <li>Dr. Ngoc Tran, Kyoto Univ., JP</li>
+            <li><a href="https://physics.utk.edu/people/instructional-faculty/nguyen-dien/" target="_blank">Dr. Dien Nguyen, Univ. of Tennessee, US</a></li>
+            <li><a href="https://www.towson.edu/fcsm/departments/physics/facultystaff/pha.html" target="_blank">Dr. Ha Phuoc, Towson Univ., US: High-energy neutrino astronomy</a></li>
+            <li><a href="https://www.physik.uni-siegen.de/tqo/members/nguyen/index.xml?lang=de" target="_blank">Dr. Chau Nguyen, Siegen Univ., GE: Quantum test in HEP</a></li>
+            <li><a href="https://www.linkedin.com/in/thi-ngoc-loan-truong-7ba868131/" target="_blank">Dr. Truong Thi Ngoc Loan</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
