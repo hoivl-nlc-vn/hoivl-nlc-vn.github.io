@@ -155,11 +155,46 @@ following successful editions  <a href="https://iop.vast.vn/activities/hgu2016/"
 	  
 
     <!-- Right Column: Hanoi Photo -->
-    <div style="flex: 1 1 400px; text-align: center;">
+    <!--div style="flex: 1 1 400px; text-align: center;">
       <img src="https://vj-prod-website-cms.s3.ap-southeast-1.amazonaws.com/shutterstock1391898416-1646649508378.png" alt="Hanoi City View"
            style="width: 100%; max-height: 300px; object-fit: cover; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
       <p style="margin-top: 10px; font-size: 0.9em; color: #555;">View of Hanoi — the heart of Vietnam</p>
+  </div-->
+	  <div style="max-width: 600px; margin: auto;">
+  <div id="slider" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+    <div class="slides" style="display: flex; transition: transform 0.5s ease;">
+      <div style="min-width: 100%; text-align: center;">
+        <img src="https://ifirse.icise.vn/nugroup/img/iop/hanoi1.png" alt="Hanoi City View"
+             style="width: 100%; max-height: 300px; object-fit: cover;">
+        <p style="margin-top: 10px; font-size: 0.9em; color: #555;">View of Hanoi — the heart of Vietnam</p>
+      </div>
+      <div style="min-width: 100%; text-align: center;">
+        <img src="https://ifirse.icise.vn/nugroup/img/iop/hanoi_2.jpg" alt="Modern view of Hanoi"
+             style="width: 100%; max-height: 300px; object-fit: cover;">
+        <p style="margin-top: 10px; font-size: 0.9em; color: #555;">Hanoi</p>
+      </div>
+      <div style="min-width: 100%; text-align: center;">
+        <img src="https://ifirse.icise.vn/nugroup/img/iop/iop.jpg" alt="Old Quarter"
+             style="width: 100%; max-height: 300px; object-fit: cover;">
+        <p style="margin-top: 10px; font-size: 0.9em; color: #555;">IOP</p>
+      </div>
     </div>
+  </div>
+  <div style="text-align: center; margin-top: 10px;">
+    <button onclick="moveSlide(-1)">❮</button>
+    <button onclick="moveSlide(1)">❯</button>
+  </div>
+</div>
+
+<script>
+  let currentIndex = 0;
+  function moveSlide(direction) {
+    const slides = document.querySelector('.slides');
+    const totalSlides = slides.children.length;
+    currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+</script>
 
   </div>
 	<p style="text-align:justify;">This edition celebrates the UN <strong>International Year of Quantum Physics and Quantum Technology (IYQ 2025)</strong>, marking a global commitment to advancing quantum science.</br>
