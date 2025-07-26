@@ -68,22 +68,43 @@
       color: #333;
       margin-top: 50px;
     }
-	      table {
+	   table {
       width: 100%;
       border-collapse: collapse;
-      margin-bottom: 40px;
-    }
-    th, td {
-      border: 1px solid #ccc;
-      padding: 12px;
-      text-align: center;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
     }
     th {
-      background-color: #2c3e50;
+      background-color: #34495e;
       color: white;
+      padding: 16px;
+      font-size: 1.1em;
+      text-transform: uppercase;
     }
     td {
-      background-color: #ffffff;
+      vertical-align: top;
+      padding: 16px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    td ul {
+      padding-left: 18px;
+      margin: 0;
+      list-style-type: none;
+    }
+    td ul li {
+      padding: 4px 0;
+    }
+    tr:nth-child(even) td {
+      background-color: #f9fbff;
+    }
+    tr td[colspan="3"] {
+      background-color: #ecf0f1;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1em;
+      padding: 14px;
     }
   </style>
 </head>
@@ -271,83 +292,66 @@ The workshop will cover (but is not limited to) the following topics:
     </thead>
     <tbody>
       <tr>
-        <!--td class="session">08:30 – 10:00</td-->
-        <td> <ul style="list-style-type:none; margin: 0; padding-left: 16px; text-align: left;">
-    <li>08:30 – 09:15: Registration, coffee/tea</li>
-    <li>09:15 – 09:30: Opening Remarks</li>
-    <li>09:30 – 10:30: Invited Talk</li>
-		<li>10:30 – 11:30: Invited Talk</li>
-		<li>11:30 – 12:30: Invited Talk</li>
-  </ul>
-	</td>
-	      <td> <ul style="list-style-type:none; margin: 0; padding-left: 16px; text-align: left;">
-		       <li>8:30 – 9:30: Invited Talk</li>
-        <li>9:30 – 10:30: Invited Talk</li>
-	      <li>10:30 – 11:30: Invited Talk</li>
-	      <li>11:30 – 12:30: Invited Talk</li>
-		     </ul>
-	</td> 
+        <td>
+          <ul>
+            <li>08:30 – 09:15: Registration, coffee/tea</li>
+            <li>09:15 – 09:30: Opening Remarks</li>
+            <li>09:30 – 10:30: Invited Talk</li>
+            <li>10:30 – 11:30: Invited Talk</li>
+            <li>11:30 – 12:30: Invited Talk</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>08:30 – 09:30: Invited Talk</li>
+            <li>09:30 – 10:30: Invited Talk</li>
+            <li>10:30 – 11:30: Invited Talk</li>
+            <li>11:30 – 12:30: Invited Talk</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>08:30 – 09:30: Invited Talk</li>
+            <li>09:30 – 10:30: Invited Talk</li>
+            <li>10:30 – 11:30: Invited Talk</li>
+            <li>11:30 – 12:30: Invited Talk</li>
+          </ul>
+        </td>
+      </tr>
 
-	            <td> <ul style="list-style-type:none; margin: 0; padding-left: 16px; text-align: left;">
-		       <li>8:30 – 9:30: Invited Talk</li>
-        <li>9:30 – 10:30: Invited Talk</li>
-	      <li>10:30 – 11:30: Invited Talk</li>
-	      <li>11:30 – 12:30: Invited Talk</li>
-		     </ul>
-	</td> 
-       
-      </tr>
-      <!--tr>
-        <td class="session">10:00 – 10:30</td>
-        <td colspan="3">Coffee Break</td>
-      </tr>
       <tr>
-        <td class="session">10:30 – 12:30</td>
-        <td>Morning Session 2</td>
-        <td>Morning Session 2</td>
-        <td>Morning Session 2</td>
-    </tr-->
-      <tr>
-        <!--td class="session">12:30 – 14:00</td-->
-        <td colspan="3">Lunch Break</td>
+        <td colspan="3">12:30 – 14:00: Lunch Break</td>
       </tr>
+
       <tr>
-        <!--td class="session">14:00 – 15:30</td-->
-        <td><ul style="list-style-type:none;margin: 0; padding-left: 16px; text-align: left;">
-    <li>14:00 – 15:00: Invited Talk</li>
-		<li>15:00 – 16:00: Invited Talk</li>
-		<li>16:00 – 16:10: Break</li>
-		<li>16:10 – 17:30: Contributed Talk</li>
-  </ul></td>
-  <td><ul style="list-style-type:none;margin: 0; padding-left: 16px; text-align: left;">
-    <li>14:00 – 15:00: Invited Talk</li>
-		<li>15:00 – 16:00: Invited Talk</li>
-		<li>16:00 – 16:10: Break</li>
-		<li>16:10 – 17:30: Contributed Talk</li>
-  </ul></td>
-	       <td><ul style="list-style-type:none;margin: 0; padding-left: 16px; text-align: left;">
-    <li>14:00 – 15:00: Invited Talk</li>
-		<li>15:00 – 16:00: Invited Talk</li>
-		<li>16:00 – 16:20: Concluding remarks</li>
-		<li>16:20 – 16:30: Break</li>
-		       <li>16:30 – 18:00: Meeting of the Vietnam High Energy Physics society</li>
-		       <ul style="list-style-type:none;margin: 0; padding-left: 16px; text-align: left;">
-    <li>16:30 – 17:30: Invited Talk</li>
-			       <li>17:30 – 18:00: Organization meeting</li>
-  </ul>
-		       <li>18:00: Closing section</li>
-	       </td>
+        <td>
+          <ul>
+            <li>14:00 – 15:00: Invited Talk</li>
+            <li>15:00 – 16:00: Invited Talk</li>
+            <li>16:00 – 16:10: Break</li>
+            <li>16:10 – 17:30: Contributed Talk</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>14:00 – 15:00: Invited Talk</li>
+            <li>15:00 – 16:00: Invited Talk</li>
+            <li>16:00 – 16:10: Break</li>
+            <li>16:10 – 17:30: Contributed Talk</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>14:00 – 15:00: Invited Talk</li>
+            <li>15:00 – 16:00: Invited Talk</li>
+            <li>16:00 – 16:20: Concluding Remarks</li>
+            <li>16:20 – 16:30: Break</li>
+            <li>16:30 – 17:30: Invited Talk</li>
+            <li>17:30 – 18:00: Organization Meeting</li>
+            <li>18:00: Closing Session</li>
+          </ul>
+        </td>
       </tr>
-      <tr>
-        <!--td class="session">15:30 – 16:00</td>
-        <td colspan="3">Coffee Break</td>
-      </tr>
-      <tr>
-        <td class="session">16:00 – 17:30</td>
-        <td>Afternoon Session 2</td>
-        <td>Afternoon Session 2</td>
-        <td>Afternoon Session 2</td>
-      </tr-->
     </tbody>
   </table>
 
