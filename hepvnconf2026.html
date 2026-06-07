@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2nd Workshop of Vietnam High Energy Physics division  </title>
+<!-- AOS Animation Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+	    padding-top: 60px; 
+    }
+
+    header {
+      background: linear-gradient(to right, #00416a, #e4e5e6);
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #003366;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+	      position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* ensure it stays above other content */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* optional for visual separation */
+  padding: 10px 0; /* optional spacing */
+    }
+
+    nav a {
+      color: white;
+      padding: 15px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    nav a:hover {
+      background: #0059b3;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #0073e6;
+      padding-bottom: 5px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .contact {
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f0f0f0;
+      color: #333;
+      margin-top: 50px;
+    }
+	   table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+	  font-size: 0.9rem; /* or e.g. 14px */
+    }
+    th {
+      background-color: #34495e;
+      color: white;
+      padding: 16px;
+      font-size: 1.1em;
+      text-transform: uppercase;
+    }
+    td {
+      vertical-align: top;
+      padding: 16px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    td ul {
+      padding-left: 18px;
+      margin: 0;
+      list-style-type: none;
+    }
+    td ul li {
+      padding: 4px 0;
+    }
+    tr:nth-child(even) td {
+      background-color: #f9fbff;
+    }
+    tr td[colspan="3"] {
+      background-color: #ecf0f1;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1em;
+      padding: 14px;
+    }
+	  html {
+  scroll-behavior: smooth;
+}
+section {
+  scroll-margin-top: 80px; /* height of fixed header */
+	position: relative;
+  padding-top: 80px;
+  margin-top: -80px;
+}
+
+	 	    .table-container {
+            overflow-x: auto;
+            padding: 20px;
+        }
+        
+    /* Add styles for participant table */
+    #participant-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    
+    #participant-table th {
+      background-color: #34495e;
+      color: white;
+      padding: 12px;
+      text-align: left;
+      cursor: pointer;
+    }
+    
+    #participant-table th:hover {
+      background-color: #2c3e50;
+    }
+    
+    #participant-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    
+    #participant-table tr:nth-child(even) {
+      background-color: #f9fbff;
+    }
+    
+    #participant-table tr:hover {
+      background-color: #eef5ff;
+    }
+    
+    .no-data {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-style: italic;
+    }
+
+	     .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 15px;
+        }
+        .day-nav {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .day-link {
+            padding: 12px 25px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        .day-link:hover {
+            background-color: #2980b9;
+            transform: translateY(-2px);
+        }
+        .day-section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border: 1px solid #e1e8ed;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+        .day-title {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+        .session-block {
+            margin-bottom: 25px;
+        }
+        .session-title {
+            background-color: #2c3e50;
+            color: white;
+            padding: 12px 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+        .plenary {
+            background-color: #e8f4fc;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+        .parallel-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .parallel-column {
+            background-color: #f0f7e6;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #2ecc71;
+        }
+        .parallel-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #27ae60;
+            padding-bottom: 5px;
+            border-bottom: 1px dashed #bdc3c7;
+        }
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+        .time {
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .talk-title {
+            font-weight: bold;
+        }
+        .speaker {
+            font-style: italic;
+            color: #7f8c8d;
+        }
+        .break {
+            background-color: #fff9e6;
+            padding: 8px 12px;
+            border-radius: 3px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .lunch {
+            text-align: center;
+            background-color: #fef9e7;
+            padding: 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        @media (max-width: 768px) {
+            .parallel-container {
+                grid-template-columns: 1fr;
+            }
+            .day-nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            .day-link {
+                width: 80%;
+                text-align: center;
+            }
+        }
+
+	  
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>2nd VN HEP workshop</h1>
+    <h2>"Across frontiers: Particle, Nuclear, Astrophysics, Cosmology and Mathematical Physics"</h2>
+    <p><strong>Hanoi, 25–27 November 2025</strong></p>
+  </header>
+
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#program">Program</a>
+    <a href="#speakers">Invited Speakers</a>
+	  <a href="#abstract">Abstract Submission</a>
+    <a href="#sponsors">Sponsors</a>
+    <a href="#organizers">Organizers</a>
+    <a href="#registration">Registration</a>
+    <a href="#participants">Participants</a>
+	  <a href="#visa">Visa</a>
+	  <a href="#accommodation">Accommodation</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+ 
+<section id="overview" data-aos="fade-left">
+  <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; max-width: 1100px; margin: auto; gap: 30px;">
+
+    <!-- Left Column: Text -->
+    <div style="flex: 1 1 500px;">
+      <h2 style="font-size: 2em; margin-bottom: 20px;">Overview</h2>
+      <p style="font-size: 1.1em; line-height: 1.6;">
+        <a href="https://hoivl-nlc-vn.github.io/">The High Energy Physics Society in Vietnam </a> brings together researchers working across frontiers: 
+        <br><br>
+        With a vision to strengthen Vietnam’s contribution to modern particle physics and connect with the global scientific community, our society also supports young scientists and students in pursuing frontier research.
+    </p>
+	    <p>
+		    The 2nd Workshop will be organized in Hanoi, Vietnam, from Wednesday, 25 November to Friday, 27 November 2026 by 
+<ul>
+		   <li> Division of High Energy Physics, Vietnam Physics Society</li>
+ <li>International centre of physics, IOP, VAST, Ha Noi, Viet Nam </li>
+</ul>
+following successful 1st workshop  <a href="https://hoivl-nlc-vn.github.io/pgu2025.html"> (2025)</a>
+
+	    </p>
+
+	
+    </div>
+	  
+
+	  <div style="max-width: 1000px; margin: auto;">
+  <div id="slider" style="position: relative; overflow: hidden; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+    <div class="slides" style="display: flex; transition: transform 0.5s ease;">
+
+		    <div style="min-width: 100%; text-align: center;">
+        <img src="https://ifirse.icise.vn/nugroup/img/pgu3.jpg" alt="Conference photo"
+             style="width: 100%; max-height: 500px; object-fit: cover;">
+        <p style="margin-top: 10px; font-size: 0.9em; color: #555;">PGU-3 conference photo</p>
+      </div>
+		
+		
+	      <div style="min-width: 100%; text-align: center;">
+        <img src="https://ifirse.icise.vn/nugroup/img/iop/iop_main.jpg" alt="Old Quarter"
+             style="width: 100%; max-height: 500px; object-fit: cover;">
+        <p style="margin-top: 10px; font-size: 0.9em; color: #555;">Conference venue: Institute of Physics, VAST </p>
+      </div>
+	    
+      <div style="min-width: 100%; text-align: center;">
+        <img src="https://ifirse.icise.vn/nugroup/img/iop/hanoi1.png" alt="Hanoi City View"
+             style="width: 100%; max-height: 500px; object-fit: cover;">
+        <p style="margin-top: 10px; font-size: 0.9em; color: #555;">View of Hanoi — the heart of Vietnam</p>
+      </div>
+      <div style="min-width: 100%; text-align: center;">
+        <img src="https://ifirse.icise.vn/nugroup/img/iop/hanoi_2.jpg" alt="Modern view of Hanoi"
+             style="width: 60%; max-height: 500px; object-fit: cover;">
+        <p style="margin-top: 10px; font-size: 0.9em; color: #555;">Modern view of Hanoi</p>
+      </div>
+    
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 10px;">
+    <button onclick="moveSlide(-1)">❮</button>
+    <button onclick="moveSlide(1)">❯</button>
+  </div>
+</div>
+
+<script>
+  let currentIndex = 0;
+  function moveSlide(direction) {
+    const slides = document.querySelector('.slides');
+    const totalSlides = slides.children.length;
+    currentIndex = (currentIndex + direction + totalSlides) % totalSlides;
+    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+  }
+</script>
+
+  </div>
+	<p style="text-align:justify;"> To-be-updated</br>
+</br>
+</br>
+	</br>
+
+Participants are encouraged to register and submit abstracts for contributed talks or posters via the workshop website. We look forward to a stimulating three-day program of plenary sessions, focused discussions, and informal networking opportunities in the vibrant city of Hanoi.
+</p>
+
+	    <h2>Scope of the workshop</h2>
+    <p>
+The workshop will cover (but is not limited to) the following topics:
+    </p>
+    <ul>
+	<li>Quantum foundations of atomic-, nuclear-, and condensed matter physics. </li>
+<li>Quantum field theory and the Standard Model.</li>
+<li>Physics beyond the Standard Model.</li>
+<li>CP violation and flavour physics. </li>
+<li>Neutrino physics and flavor oscillations.</li>
+<li>Collider physics and advanced detector technologies.</li>
+<li>Gravitational theory and approaches to quantum gravity.</li>
+<li>Dark matter, dark energy, and quantum aspects of the cosmos.</li>
+<li>Early universe cosmology, inflation, and quantum initial conditions.</li>
+<li>Black holes, spacetime structure, and gravitational wave physics.</li>
+<li>Astroparticle physics and high-energy cosmic phenomena.</li>
+<li>Quantum information science and quantum technologies.</li>
+	        </ul>
+	<h2 style="font-size: 2em; margin-bottom: 20px;">IMPORTANT DATES:</h2>
+	    <p>
+		    <b style='color:red;'>Final day of registration (for participants requiring a visa):</b> 20 October 2026 . <br> </br>
+<b style='color:red;'>Final day of registration (for other participants):</b> 5 November 2026. <br> </br>
+<b style='color:red;'>Final day to apply for financial support:</b> 15 October 2026.<br> </br>
+<b style='color:red;'>Final day of abstract submission:</b> 01 October 2026.<br> </br>
+
+	    </p>
+
+</section>
+
+  <section id="program" data-aos="fade-left" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+	   
+ <h2> Tentative Timetable (Nov. 25–27,2026)</h2>
+	     <p>Tenative program can be found at <a href="">PGU3 Scientific Program (📄 pdf)</a>
+</p>
+	  <!--p>To upload slides, please use this link <a href="https://ifirse.icise.vn/nugroup/meeting/pgu2025.php">File Uploading (ask organizer for the passcode)</a></p-->
+  
+    
+        <h3>List of posters</h3>
+  
+  </ol>
+
+  </section>
+
+  <section id="speakers" data-aos="fade-left" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+    <h2> Invited Speakers (tentative list)</h2>
+
+  
+
+	  <h2>Contributed Talks (to be updated)</h2>
+	
+  </section>
+
+	   <section id="abstract" data-aos="fade-left" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+	<h2>Abstract submission</h2>
+		   Please consider to submit an abstract with the following form for the workshop submission. Deadline for submission is 01 October 2025 (Wednesday). 
+   <!--div style="text-align: center; margin-top: 10px;">
+		   <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScd7LX9_qCrNvBiyRS4dMOaCUH8Hvj4vTALX6d4Lah6klmJBQ/viewform?embedded=true" width="640" height="1075" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+   </div-->
+	   </section>
+
+	  	
+	  
+  <section id="sponsors" data-aos="fade-right" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+    <h2>Sponsors</h2>
+    <ul>
+      <li>International Center of Physics, IOP, VAST, Hanoi, Viet Nam</li>    
+	    <li>Division of Vietnam High Energy Physics, Vietnam Physics Socieity</li>   
+    </ul>
+	  Also in part by 
+	  <ul>
+		  <li>TBA</li>
+	  </ul>
+  </section>
+
+  <section id="organizers" data-aos="zoom-in" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+    <h2>Organizers and Scientific Committee</h2>
+    <h3>Organizing institutions</h3>
+ <ul>
+<li>  Division of High Energy Physics Society (V-HEPS), Vietnam Physics Society </li>
+<li> International Center of Physics, IOP, VAST, Hanoi, Viet Nam </li>
+</ul>
+    <h3>Scientific committee (TBD)</h3>
+    
+    <h3>Organizing committee</h3>
+    
+	      <h3>Secretariat</h3>
+		 <ul>
+      <li>Duong Thi Man (IOP, VAST, Hanoi)</li>
+			 <li>Phan Van Ky (IOP and GUST, VAST, Hanoi)</li>
+			 <li>Tran Thi Thanh Mai (IOP, VAST, Hanoi)</li>
+	<li>Tran Tien Manh (IOP, VAST, Hanoi)</li>
+    </ul>      
+	    
+  </section>
+
+  <!--section id="registration" data-aos="zoom-in-left" data-aos-delay="100" data-aos-anchor-placement="top-center"-->
+	   <section id="registration" data-aos="fade-left" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+    <h2>Registration</h2>
+    <p>
+       Please fill out the registration form here <!--a href="https://docs.google.com/forms/d/e/1FAIpQLSf96VtIx9g8S4LUT-GDzyL7dZV-b4S5QkvrOz4KIcJLg7oFsw/viewform?usp=header"> Registration form</a--></p>
+
+		     <b>Note</b>: Your registration information, except for your full name and affiliation, will not be published.
+
+	  <h3>Conference Fee (TBD)</h3>
+	 
+	  <h3>Financial Support (TBD)</h3>
+
+  </section>
+
+  <section id="participants" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+    <h2>Participants</h2>
+   
+  </section>
+
+	  <section id="visa" data-aos="zoom-in-right" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+    <h2>Visa</h2>
+  
+		</section>
+
+  <section id="contact" data-aos="fade-left" data-aos-delay="100" data-aos-anchor-placement="top-bottom">
+    <h2>Contact</h2>
+    <p class="contact">
+      For inquiries, please contact the organizing team at:<br>
+      📧 <a href="mailto:hoivl.nlc.vn@gmail.com">hoivl.nlc.vn@gmail.com</a> <br>
+		This website is hosted by <a href="https://hoivl-nlc-vn.github.io/"> Division of High Energy Physics, Vietnam Physics Society</a>
+    </p>
+  </section>
+
+  <footer>
+    © 2026 2nd Vietnam HEP Workshop — Hanoi, Vietnam
+  </footer>
+<script>
+  AOS.init({
+    duration: 800, // Animation duration in ms
+    once: false     // Whether animation happens only once while scrolling down
+  });
+</script>
+	<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const searchInput = document.getElementById('search');
+    const tableBody = document.getElementById('table-body');
+    const noDataMessage = document.getElementById('no-data-message');
+    const totalCount = document.getElementById('total-count');
+    const instituteCount = document.getElementById('institute-count');
+    const countryCount = document.getElementById('country-count');
+    const tableHeaders = document.querySelectorAll('th[data-column]');
+    
+    // Your CSV data
+    const csvData = `
+Cao Van Son,"IFIRSE, ICISE, Quy Nhơn",Vietnam
+Dinh Nguyen Dinh,"Institute of Physics, Hanoi",Vietnam
+Nguyen Anh Ky ,"Institute of Physics, Hanoi",Vietnam 
+Nguyen Thi Hong Van,"Institute of Physics, Hanoi",Vietnam
+`;
+
+    let participants = [];
+    let filteredParticipants = [];
+    let sortColumn = 'name';
+    let sortDirection = 'asc';
+    
+    // Load data on page load
+    loadData();
+    
+    // Handle search input
+    searchInput.addEventListener('input', function() {
+        filterParticipants();
+    });
+    
+    // Handle column sorting
+    tableHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            const column = this.getAttribute('data-column');
+            
+            if (sortColumn === column) {
+                sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+            } else {
+                sortColumn = column;
+                sortDirection = 'asc';
+            }
+            
+            // Update header classes
+            tableHeaders.forEach(h => {
+                h.classList.remove('asc', 'desc');
+            });
+            this.classList.add(sortDirection);
+            
+            sortParticipants();
+            renderTable();
+        });
+    });
+    
+    function loadData() {
+        parseCSV(csvData);
+        
+        // Initialize filtered participants
+        filteredParticipants = [...participants];
+        
+        // Sort and render
+        sortParticipants();
+        updateStats();
+        renderTable();
+    }
+    
+    function parseCSV(csvText) {
+        const lines = csvText.split('\n');
+        participants = [];
+        
+        // Skip the header line (index 0)
+        for (let i = 1; i < lines.length; i++) {
+            const line = lines[i].trim();
+            if (line) {
+                const columns = parseCSVLine(line);
+                
+                if (columns.length >= 3) {
+                    participants.push({
+                        name: columns[0] || 'N/A',
+                        institute: columns[1] || 'N/A',
+                        citizenship: columns[2] || 'N/A'
+                    });
+                }
+            }
+        }
+    }
+    
+    function parseCSVLine(line) {
+        const result = [];
+        let current = '';
+        let inQuotes = false;
+        
+        for (let i = 0; i < line.length; i++) {
+            const char = line[i];
+            
+            if (char === '"') {
+                inQuotes = !inQuotes;
+            } else if (char === ',' && !inQuotes) {
+                result.push(current.trim());
+                current = '';
+            } else {
+                current += char;
+            }
+        }
+        
+        // Add the last field
+        result.push(current.trim());
+        
+        return result;
+    }
+    
+    function filterParticipants() {
+        const searchTerm = searchInput.value.toLowerCase();
+        
+        if (searchTerm === '') {
+            filteredParticipants = [...participants];
+        } else {
+            filteredParticipants = participants.filter(participant => 
+                participant.name.toLowerCase().includes(searchTerm) ||
+                participant.institute.toLowerCase().includes(searchTerm) ||
+                participant.citizenship.toLowerCase().includes(searchTerm)
+            );
+        }
+        
+        updateStats();
+        renderTable();
+    }
+    
+    function sortParticipants() {
+        filteredParticipants.sort((a, b) => {
+            let valueA = a[sortColumn].toLowerCase();
+            let valueB = b[sortColumn].toLowerCase();
+            
+            if (sortDirection === 'asc') {
+                return valueA.localeCompare(valueB);
+            } else {
+                return valueB.localeCompare(valueA);
+            }
+        });
+    }
+    
+    function renderTable() {
+        tableBody.innerHTML = '';
+        
+        if (filteredParticipants.length === 0) {
+            noDataMessage.style.display = 'block';
+            return;
+        }
+        
+        noDataMessage.style.display = 'none';
+        
+        filteredParticipants.forEach(participant => {
+            const row = document.createElement('tr');
+            
+            const nameCell = document.createElement('td');
+            nameCell.textContent = participant.name;
+            
+            const instituteCell = document.createElement('td');
+            instituteCell.textContent = participant.institute;
+            
+            const citizenshipCell = document.createElement('td');
+            citizenshipCell.textContent = participant.citizenship;
+            
+            row.appendChild(nameCell);
+            row.appendChild(instituteCell);
+            row.appendChild(citizenshipCell);
+            
+            tableBody.appendChild(row);
+        });
+    }
+    
+    function updateStats() {
+        totalCount.textContent = filteredParticipants.length;
+        
+        // Count unique institutes
+        const institutes = new Set();
+        filteredParticipants.forEach(p => institutes.add(p.institute));
+        instituteCount.textContent = institutes.size;
+        
+        // Count unique countries
+        const countries = new Set();
+        filteredParticipants.forEach(p => countries.add(p.citizenship));
+        countryCount.textContent = countries.size;
+    }
+});
+</script>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
+</body>
+</html>
