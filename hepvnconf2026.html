@@ -300,7 +300,42 @@ section {
                 text-align: center;
             }
         }
+.scope-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
 
+.scope-text {
+    flex: 1;
+}
+
+.scope-image {
+    flex: 0 0 35%;
+    text-align: center;
+}
+
+.scope-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .scope-container {
+        flex-direction: column;
+    }
+
+    .scope-image {
+        width: 100%;
+    }
+
+    .scope-image img {
+        max-width: 100%;
+    }
+}
 	  
   </style>
 </head>
@@ -423,9 +458,12 @@ Recognizing the importance of nurturing the next generation of scientists, the c
 	</br>
 
 Participants are encouraged to register and submit abstracts for contributed talks or posters via the meeting website. We look forward to a stimulating three-day program of plenary sessions, focused discussions, and informal networking opportunities in the vibrant city of Hanoi.
-</p>
 
-	    <h2>Scope of the meeting</h2>
+</p>
+	<h3> See the Meeting flyer at <a href=""> HERE</a></h3>
+	
+
+	    <!--h2>Scope of the meeting</h2>
     <p>
 The meeting will cover (but is not limited to) the following topics:
     </p>
@@ -442,7 +480,35 @@ The meeting will cover (but is not limited to) the following topics:
 <li>Black holes, spacetime structure, and gravitational wave physics.</li>
 <li>Astroparticle physics and high-energy cosmic phenomena.</li>
 <li>Quantum information science and quantum technologies.</li>
-	        </ul>
+</ul-->
+	<h2>Scope of the meeting</h2>
+
+<div class="scope-container">
+    <div class="scope-text">
+        <p>
+            The meeting will cover (but is not limited to) the following topics:
+        </p>
+        <ul>
+            <li>Mathematical physics</li>
+            <li>Quantum field theory and the Standard Model.</li>
+            <li>Physics beyond the Standard Model.</li>
+            <li>CP violation and flavour physics.</li>
+            <li>Neutrino physics and flavor oscillations.</li>
+            <li>Collider physics and advanced detector technologies.</li>
+            <li>Gravitational theory and approaches to quantum gravity.</li>
+            <li>Dark matter, dark energy, and quantum aspects of the cosmos.</li>
+            <li>Early universe cosmology, inflation, and quantum initial conditions.</li>
+            <li>Black holes, spacetime structure, and gravitational wave physics.</li>
+            <li>Astroparticle physics and high-energy cosmic phenomena.</li>
+            <li>Quantum information science and quantum technologies.</li>
+        </ul>
+    </div>
+
+    <div class="scope-image">
+        <img src="docs/vnhep2_flyer0.jpg" alt="Scope of the meeting">
+    </div>
+</div>
+	
 	<h2 style="font-size: 2em; margin-bottom: 20px;">IMPORTANT DATES:</h2>
 	    <p>
 		    <b style='color:red;'>Abstract submission</b>: 10 October 2026 (Sat.). <br> </br>
