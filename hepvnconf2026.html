@@ -354,7 +354,7 @@ section {
 #vh-program .vh-table{width:100%;border-collapse:collapse;table-layout:fixed;min-width:320px}
 #vh-program .vh-par{min-width:640px}
 #vh-program th,#vh-program td{border:1px solid var(--vh-line);padding:.5em .6em;vertical-align:top;text-align:left}
-#vh-program thead th{font-size:.92em; color:#E6E6FA}
+#vh-program thead th{background:var(--vh-soft);color:#1f2a37;font-size:.92em;text-transform:none}
 #vh-program thead th small{display:block;font-weight:normal;color:var(--vh-muted)}
 #vh-program .vh-time{width:7.5em;white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--vh-muted);font-size:.9em}
 #vh-program tr.vh-pause td{background:var(--vh-soft);font-style:italic;color:var(--vh-muted)}
@@ -362,6 +362,10 @@ section {
 #vh-program .vh-kind{display:inline-block;font-size:.72em;font-weight:bold;text-transform:uppercase;letter-spacing:.04em;padding:.1em .5em;border-radius:3px;margin-bottom:.25em}
 #vh-program .vh-inv{background:#e3ecf7;color:#1f4e79}
 #vh-program .vh-oral{background:#e6f4ea;color:#1e6b35}
+#vh-program .vh-lec{background:#f3e8f7;color:#6a2c80}
+#vh-program .vh-posthead{scroll-margin-top:90px}
+#vh-program .vh-posters{padding-left:1.6em}
+#vh-program .vh-posters li{margin:0 0 .8em}
 #vh-program .vh-title{font-weight:600}
 #vh-program .vh-spk{margin-top:.15em}
 #vh-program .vh-aff{color:var(--vh-muted)}
@@ -561,145 +565,160 @@ The meeting will cover (but is not limited to) the following topics:
  <h2> Tentative Program (Nov. 25–27,2026)</h2>
 	     <!--p>Tenative program can be found at <a href="">PGU3 Scientific Program (📄 pdf)</a>
   </p-->
-<p class="vh-note">Tentative program — times and some talks are still to be confirmed. Invited talks: 50 min; oral talks: 30 min (including discussion). Times in Hanoi local time (UTC+7).</p>
-<div class="vh-daynav"><a href="#vh-d1">Wed 25 Nov</a><a href="#vh-d2">Thu 26 Nov</a><a href="#vh-d3">Fri 27 Nov</a></div>
+<p class="vh-note">Tentative program — times may still change. Invited talks: 40 min; oral talks: 25 min (including discussion). Times in Hanoi local time (UTC+7).</p>
+<div class="vh-daynav"><a href="#vh-d1">Wed 25 Nov</a><a href="#vh-d2">Thu 26 Nov</a><a href="#vh-d3">Fri 27 Nov</a><a href="#vh-posters">Posters</a></div>
 
 <div class="vh-day" id="vh-d1"><h3 class="vh-dayhead">Wednesday <span>25 November 2026</span></h3>
-<h4 class="vh-sess">Morning</h4><div class="vh-scroll"><table class="vh-table"><thead>
+<h4 class="vh-sess">Opening</h4><div class="vh-scroll"><table class="vh-table"><thead>
 <tr><th class="vh-time">Time</th><th>Main hall</th></tr></thead><tbody>
-<tr class="vh-pause"><td class="vh-time">08:30 – 09:10</td><td colspan="1">Registration, coffee/tea</td></tr>
-<tr class="vh-pause"><td class="vh-time">09:10 – 09:30</td><td colspan="1">Opening remarks</td></tr></tbody>
+<tr class="vh-pause"><td class="vh-time">08:30 – 09:00</td><td colspan="1">Registration, coffee/tea</td></tr>
+<tr class="vh-pause"><td class="vh-time">09:00 – 09:15</td><td colspan="1">Opening remarks</td></tr></tbody>
 </table></div>
-<h4 class="vh-sess">Plenary session 1</h4><div class="vh-scroll"><table class="vh-table"><thead>
+<h4 class="vh-sess">Plenary session</h4><div class="vh-scroll"><table class="vh-table"><thead>
 <tr><th class="vh-time">Time</th><th>Main hall</th></tr></thead><tbody>
-<tr><td class="vh-time">09:30 – 10:20</td><td><div class="vh-talk" id="talk-d1-01"><span class="vh-kind vh-inv">Invited</span><div class="vh-title vh-tba">Title TBA</div><div class="vh-spk">Đỗ Thị Hương <span class="vh-aff">(IOP, VAST)</span></div>
+<tr><td class="vh-time">09:15 – 09:55</td><td><div class="vh-talk" id="talk-d1-01"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Probing singlet scalar vacuum structure with gravitational waves and the electron EDM</div><div class="vh-spk">Eibun Senaha <span class="vh-aff">(Van Lang Univ.)</span></div>
       <!-- d1-01: paste the slides URL into href below -->
       <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr class="vh-pause"><td class="vh-time">10:20 – 10:50</td><td colspan="1">Coffee break</td></tr>
-<tr><td class="vh-time">10:50 – 11:40</td><td><div class="vh-talk" id="talk-d1-02"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Recent results from the LZ experiment (tentative)</div><div class="vh-spk">Paulo Brás <span class="vh-aff">(LIP-Coimbra)</span> <span class="vh-online">online</span></div>
+<tr class="vh-pause"><td class="vh-time">09:55 – 10:05</td><td colspan="1">Short break</td></tr>
+<tr><td class="vh-time">10:05 – 10:45</td><td><div class="vh-talk" id="talk-d1-02"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Recent results from the LZ experiment (tentative)</div><div class="vh-spk">Paulo Brás <span class="vh-aff">(LIP-Coimbra)</span> <span class="vh-online">online</span></div>
       <!-- d1-02: paste the slides URL into href below -->
       <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr class="vh-pause"><td class="vh-time">11:40 – 14:00</td><td colspan="1">Lunch</td></tr></tbody>
-</table></div>
-<h4 class="vh-sess">Parallel session 1</h4><div class="vh-scroll"><table class="vh-table vh-par"><thead>
-<tr><th class="vh-time">Time</th><th>Session A — High Energy Physics<small>Main hall</small></th><th>Session B — Nuclear Physics<small>Room TBA</small></th></tr></thead><tbody>
-<tr><td class="vh-time">14:00 – 14:50</td><td><div class="vh-talk" id="talk-d1-03"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">LHCb and hadron physics (tentative)</div><div class="vh-spk">Trần Chiến Thắng <span class="vh-aff">(HCMUTE)</span></div>
+<tr class="vh-pause"><td class="vh-time">10:45 – 10:55</td><td colspan="1">Short break</td></tr>
+<tr><td class="vh-time">10:55 – 11:35</td><td><div class="vh-talk" id="talk-d1-03"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Quantum simulation for high-energy physics: exploring CP violation and the Peccei–Quinn mechanism</div><div class="vh-spk">Le Bin Ho <span class="vh-aff">(Tohoku Univ.)</span></div>
       <!-- d1-03: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d1-04"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Developing potential models for nuclear reactions in astrophysical environments</div><div class="vh-spk">Nguyễn Lê Anh <span class="vh-aff">(HCMC Univ. of Education)</span></div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
+<tr class="vh-pause"><td class="vh-time">11:35 – 14:00</td><td colspan="1">Lunch</td></tr></tbody>
+</table></div>
+<h4 class="vh-sess">Parallel session</h4><div class="vh-scroll"><table class="vh-table vh-par"><thead>
+<tr><th class="vh-time">Time</th><th>Session A<small>Main hall</small></th><th>Session B<small>Room 315</small></th></tr></thead><tbody>
+<tr><td class="vh-time">14:00 – 14:40</td><td><div class="vh-talk" id="talk-d1-04"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">A dynamical Minkowski spacetime – Standard Model without internal symmetry?</div><div class="vh-spk">Nguyen The Toan <span class="vh-aff">(VNU-HUS)</span></div>
       <!-- d1-04: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr class="vh-pause"><td class="vh-time">14:50 – 15:20</td><td colspan="2">Coffee break</td></tr>
-<tr><td class="vh-time">15:20 – 16:10</td><td><div class="vh-talk" id="talk-d1-05"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Sterile-neutrino searches with DUNE Near Detector and MINERvA</div><div class="vh-spk">Vương Quỳnh Hương <span class="vh-aff">(Univ. of Rochester)</span> <span class="vh-online">online</span></div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d1-05"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Nature of the upbend resonance in radiative strength functions of excited nuclei</div><div class="vh-spk">Nguyen Quang Hung <span class="vh-aff">(Duy Tan Univ.)</span></div>
       <!-- d1-05: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d1-06"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Nuclear structure studies using γ–γ coincidence spectroscopy at the Dalat Research Reactor: achievements and developments</div><div class="vh-spk">Nguyễn Ngọc Anh <span class="vh-aff">(Phenikaa Univ.)</span></div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
+<tr class="vh-pause"><td class="vh-time">14:40 – 14:50</td><td colspan="2">Short break</td></tr>
+<tr><td class="vh-time">14:50 – 15:30</td><td><div class="vh-talk" id="talk-d1-06"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">LHCb and hadron physics (tentative)</div><div class="vh-spk">Tran Chien Thang <span class="vh-aff">(HCMUTE)</span></div>
       <!-- d1-06: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr><td class="vh-time"><span class="vh-tba">TBA</span></td><td><div class="vh-talk" id="talk-d1-07"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">From discovery to precision: neutrino physics in Japan with Super-Kamiokande, T2K, and Hyper-Kamiokande</div><div class="vh-spk">Trần Văn Ngọc <span class="vh-aff">(IFIRSE, ICISE)</span></div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d1-07"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Developing potential models for nuclear reactions in astrophysical environments</div><div class="vh-spk">Nguyen Le Anh <span class="vh-aff">(HCMC Univ. of Education)</span></div>
       <!-- d1-07: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d1-08"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Unfolding method for overlapping peaks induced by light charged particles and <sup>19</sup>F(p,α<sub>0</sub>)<sup>16</sup>O reaction excitation functions with E<sub>p</sub> = 0.5–3.2 MeV</div><div class="vh-spk">Lê Xuân Chung <span class="vh-aff">(VINATOM)</span></div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
+<tr class="vh-pause"><td class="vh-time">15:30 – 16:00</td><td colspan="2">Coffee break</td></tr>
+<tr><td class="vh-time">16:00 – 16:25</td><td><div class="vh-talk" id="talk-d1-08"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Starobinsky-generalized Einsteinian cubic gravity model</div><div class="vh-spk">Do Quoc Tuan <span class="vh-aff">(Phenikaa Univ.)</span></div>
       <!-- d1-08: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr><td class="vh-time"><span class="vh-tba">TBA</span></td><td><div class="vh-talk" id="talk-d1-09"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Charged pion femtoscopy in Au+Au collisions at √<span class="vh-ov">s</span><sub>NN</sub> = 3.0–7.7 GeV in the STAR experiment at RHIC</div><div class="vh-spk">Lương Bá Vinh <span class="vh-aff">(JINR, STAR Collaboration)</span></div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d1-09"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Study of cosmogenic activation of the HPGe detector in the νGeN experiment</div><div class="vh-spk">Pham Thanh <span class="vh-aff">(JINR)</span></div>
       <!-- d1-09: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td class="vh-empty"></td></tr>
-<tr><td class="vh-time"><span class="vh-tba">TBA</span></td><td><div class="vh-talk" id="talk-d1-10"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Standard Model (tentative)</div><div class="vh-spk">Lê Thọ Huệ <span class="vh-aff">(Van Lang Univ.)</span></div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
+<tr><td class="vh-time">16:25 – 16:50</td><td><div class="vh-talk" id="talk-d1-10"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Resolving the diquark paradox and baryon mass spectra via a parameter-free coordinate-space three-channel framework</div><div class="vh-spk">Nguyen Ai Viet <span class="vh-aff">(IGNITE)</span> and Ha Dai Phuoc</div>
       <!-- d1-10: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td class="vh-empty"></td></tr>
-<tr><td class="vh-time"><span class="vh-tba">TBA</span></td><td><div class="vh-talk" id="talk-d1-11"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Searches for charged lepton flavor violation: current status and future prospects</div><div class="vh-spk">Đồng Văn Thanh <span class="vh-aff">(HUST)</span></div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d1-11"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Measurement of the flux-weighted average cross section for the reaction at the bremsstrahlung end-point energies of 55, 60 and 65 MeV</div><div class="vh-spk">Bui Hoa <span class="vh-aff">(VNU-HUS)</span></div>
       <!-- d1-11: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td class="vh-empty"></td></tr>
-<tr><td class="vh-time"><span class="vh-tba">TBA</span></td><td><div class="vh-talk" id="talk-d1-12"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Theoretical predictions for triply-polarized WWW production at the LHC at NLO QCD accuracy</div><div class="vh-spk">Lê Văn Cường <span class="vh-aff">(PIAS)</span></div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
+<tr><td class="vh-time">16:50 – 17:15</td><td><div class="vh-talk" id="talk-d1-12"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Finding benchmarks for Higgs pair production with NMSSMScanner</div><div class="vh-spk">Dao Thi Nhung <span class="vh-aff">(Phenikaa Univ.)</span></div>
       <!-- d1-12: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d1-13"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Measurement of the flux-weighted average cross section for the reaction at the bremsstrahlung end-point energies of 55, 60 and 65 MeV</div><div class="vh-spk">Bùi Hoa <span class="vh-aff">(HUS, VNU)</span></div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d1-13"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Theoretical predictions for triply-polarized WWW production at the LHC at NLO QCD accuracy</div><div class="vh-spk">Le Van Cuong <span class="vh-aff">(PIAS)</span></div>
       <!-- d1-13: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr><td class="vh-time"><span class="vh-tba">TBA</span></td><td><div class="vh-talk" id="talk-d1-14"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">A review of experimental searches for heavy neutrinos</div><div class="vh-spk">Trần Tiến Mạnh <span class="vh-aff">(IOP, VAST)</span></div>
-      <!-- d1-14: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d1-15"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Study of cosmogenic activation of the HPGe detector in the νGeN experiment</div><div class="vh-spk">Phạm Thành <span class="vh-aff">(JINR)</span></div>
-      <!-- d1-15: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr><td class="vh-time"><span class="vh-tba">TBA</span></td><td><div class="vh-talk" id="talk-d1-16"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Development of a TCAD-based silicon photomultiplier model for radiation damage studies</div><div class="vh-spk">Nguyễn Minh Trường <span class="vh-aff">(FPT Univ., Da Nang)</span></div>
-      <!-- d1-16: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td class="vh-empty"></td></tr></tbody>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr></tbody>
 </table></div></div>
 
 <div class="vh-day" id="vh-d2"><h3 class="vh-dayhead">Thursday <span>26 November 2026</span></h3>
-<h4 class="vh-sess">Plenary session 2</h4><div class="vh-scroll"><table class="vh-table"><thead>
-<tr><th class="vh-time">Time</th><th>Main hall</th></tr></thead><tbody>
-<tr class="vh-pause"><td class="vh-time">09:00 – 09:30</td><td colspan="1">Coffee/tea</td></tr>
-<tr><td class="vh-time">09:30 – 10:20</td><td><div class="vh-talk" id="talk-d2-01"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Nature of the upbend resonance in radiative strength functions of excited nuclei</div><div class="vh-spk">Nguyễn Quang Hưng <span class="vh-aff">(Duy Tan Univ.)</span></div>
+<h4 class="vh-sess">Parallel session</h4><div class="vh-scroll"><table class="vh-table vh-par"><thead>
+<tr><th class="vh-time">Time</th><th>Session A<small>Main hall</small></th><th>Session B<small>Room TBA</small></th></tr></thead><tbody>
+<tr class="vh-pause"><td class="vh-time">08:00 – 08:30</td><td colspan="2">Coffee/tea</td></tr>
+<tr><td class="vh-time">08:30 – 09:10</td><td><div class="vh-talk" id="talk-d2-01"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Worldline higher-spin gravity</div><div class="vh-spk">Tran Tung <span class="vh-aff">(Kyung Hee Univ.)</span></div>
       <!-- d2-01: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr class="vh-pause"><td class="vh-time">10:20 – 10:50</td><td colspan="1">Coffee break</td></tr>
-<tr><td class="vh-time"><span class="vh-tba">TBA</span></td><td><div class="vh-talk" id="talk-d2-02"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Cherenkov light, IceCube, and the neutrino sky</div><div class="vh-spk">Cao Văn Sơn <span class="vh-aff">(IFIRSE, ICISE)</span></div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d2-02"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Gravitational waves from oscillons in a generalized exponential plateau potential</div><div class="vh-spk">Peter Lott <span class="vh-aff">(Phenikaa Univ.)</span> <span class="vh-online">online</span></div>
       <!-- d2-02: paste the slides URL into href below -->
       <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr class="vh-pause"><td class="vh-time"><span class="vh-tba">TBA</span></td><td colspan="1">Break</td></tr>
-<tr><td class="vh-time"><span class="vh-tba">TBA</span></td><td><div class="vh-talk" id="talk-d2-03"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Dark matter and alternatives</div><div class="vh-spk">Françoise Combes <span class="vh-aff">(Paris Observatory)</span> <span class="vh-online">online</span></div>
+<tr class="vh-pause"><td class="vh-time">09:10 – 09:20</td><td colspan="2">Short break</td></tr>
+<tr><td class="vh-time">09:10 – 09:50</td><td><div class="vh-talk" id="talk-d2-03"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Sterile-neutrino searches with DUNE Near Detector and MINERvA</div><div class="vh-spk">Vuong Quynh Huong <span class="vh-aff">(Univ. of Rochester)</span> <span class="vh-online">online</span></div>
       <!-- d2-03: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr class="vh-pause"><td class="vh-time"><span class="vh-tba">TBA</span></td><td colspan="1">Lunch</td></tr></tbody>
-</table></div>
-<h4 class="vh-sess">Parallel session 2</h4><div class="vh-scroll"><table class="vh-table vh-par"><thead>
-<tr><th class="vh-time">Time</th><th>Session A — Mathematical Physics<small>Main hall</small></th><th>Session B — Astrophysics  &amp; Cosmology <small>Room TBA</small></th></tr></thead><tbody>
-<tr><td class="vh-time">14:00 – 14:50</td><td><div class="vh-talk" id="talk-d2-04"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Worldline higher-spin gravity</div><div class="vh-spk">Trần Tùng <span class="vh-aff">(Kyung Hee Univ.)</span></div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d2-04"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Nuclear structure studies using γ–γ coincidence spectroscopy at the Dalat Research Reactor: achievements and developments</div><div class="vh-spk">Nguyen Ngoc Anh <span class="vh-aff">(Phenikaa Univ.)</span></div>
       <!-- d2-04: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d2-05"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">BICEP Array / SPHEREx (tentative)</div><div class="vh-spk">Speaker TBA</div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
+<tr class="vh-pause"><td class="vh-time">09:50 – 10:20</td><td colspan="2">Coffee break</td></tr>
+<tr><td class="vh-time">10:20 – 10:45</td><td><div class="vh-talk" id="talk-d2-05"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">From double-soft graviton theorems to gravitational waves</div><div class="vh-spk">Karan Fernandes <span class="vh-aff">(STAI, Van Lang Univ.)</span> <span class="vh-online">online</span></div>
       <!-- d2-05: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr class="vh-pause"><td class="vh-time">14:50 – 15:20</td><td colspan="2">Coffee break</td></tr>
-<tr><td class="vh-time">15:20 – 16:10</td><td><div class="vh-talk" id="talk-d2-06"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Geometry and topology of (quantum) gauge theory and supergravity (tentative)</div><div class="vh-spk">Siye Wu <span class="vh-aff">(National Tsing Hua Univ., Taiwan)</span></div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d2-06"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Development of a TCAD-based silicon photomultiplier model for radiation damage studies</div><div class="vh-spk">Nguyen Minh Truong <span class="vh-aff">(FPT Univ., Da Nang)</span></div>
       <!-- d2-06: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d2-07"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Gravitational waves from oscillons in a generalized exponential plateau potential</div><div class="vh-spk">Peter Lott <span class="vh-aff">(Phenikaa Univ.)</span> <span class="vh-online">online</span></div>
-      <!-- d2-07: paste the slides URL into href below -->
       <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr><td class="vh-time"><span class="vh-tba">TBA</span></td><td class="vh-empty"></td><td><div class="vh-talk" id="talk-d2-08"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Starobinsky-generalized Einsteinian cubic gravity model</div><div class="vh-spk">Đỗ Quốc Tuấn <span class="vh-aff">(Phenikaa Univ.)</span></div>
+<tr><td class="vh-time">10:45 – 11:10</td><td><div class="vh-talk" id="talk-d2-07"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">A review of experimental searches for heavy neutrinos</div><div class="vh-spk">Tran Tien Manh <span class="vh-aff">(IOP, VAST)</span></div>
+      <!-- d2-07: paste the slides URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d2-08"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Search for Higgs boson decays to charm quarks and constraints on the Higgs–charm coupling with the CMS experiment</div><div class="vh-spk">Duong Nguyen <span class="vh-aff">(Univ. at Buffalo)</span> <span class="vh-online">online</span></div>
       <!-- d2-08: paste the slides URL into href below -->
       <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr><td class="vh-time"><span class="vh-tba">TBA</span></td><td class="vh-empty"></td><td><div class="vh-talk" id="talk-d2-09"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">From double-soft graviton theorems to gravitational waves</div><div class="vh-spk">Karan Fernandes <span class="vh-aff">(STAI, Van Lang Univ.)</span></div>
+<tr><td class="vh-time">11:10 – 11:35</td><td><div class="vh-talk" id="talk-d2-09"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Graph neural networks for reconstruction in water Cherenkov detectors</div><div class="vh-spk">Hoang Quoc Viet <span class="vh-aff">(École Polytechnique)</span> <span class="vh-online">online</span></div>
       <!-- d2-09: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr><td class="vh-time"><span class="vh-tba">TBA</span></td><td class="vh-empty"></td><td><div class="vh-talk" id="talk-d2-10"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Metric variation of the energy–momentum tensor of a perfect fluid and its applications to cosmology and neutron stars</div><div class="vh-spk">Phạm Văn Kỳ <span class="vh-aff">(IOP, VAST)</span></div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d2-10"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Mu2e at Fermilab: commissioning and the road to the first beam run</div><div class="vh-spk">Tran Hoai Nam <span class="vh-aff">(Boston Univ.)</span> <span class="vh-online">online</span></div>
       <!-- d2-10: paste the slides URL into href below -->
       <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr><td class="vh-time"><span class="vh-tba">TBA</span></td><td class="vh-empty"></td><td><div class="vh-talk" id="talk-d2-11"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">A unified framework to study the <i>f</i>-family of modified gravity theories</div><div class="vh-spk">Saikat Chakraborty</div>
+<tr class="vh-pause"><td class="vh-time">11:35 – 14:00</td><td colspan="2">Lunch</td></tr></tbody>
+</table></div>
+<h4 class="vh-sess">Plenary session</h4><div class="vh-scroll"><table class="vh-table"><thead>
+<tr><th class="vh-time">Time</th><th>Main hall</th></tr></thead><tbody>
+<tr><td class="vh-time">14:00 – 14:40</td><td><div class="vh-talk" id="talk-d2-11"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Equation of state of spin-polarized nuclear matter</div><div class="vh-spk">Dao Tien Khoa <span class="vh-aff">(INST, Vinatom)</span></div>
       <!-- d2-11: paste the slides URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
+<tr class="vh-pause"><td class="vh-time">14:40 – 15:00</td><td colspan="1">Break</td></tr>
+<tr><td class="vh-time">15:00 – 15:40</td><td><div class="vh-talk" id="talk-d2-12"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Dark matter and alternatives</div><div class="vh-spk">Françoise Combes <span class="vh-aff">(Paris Observatory; CNRS Gold Medal 2020)</span> <span class="vh-online">online</span></div>
+      <!-- d2-12: paste the slides URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
+<tr class="vh-pause"><td class="vh-time">15:40 – 16:10</td><td colspan="1">Coffee break</td></tr>
+<tr><td class="vh-time">16:10 – 16:50</td><td><div class="vh-talk" id="talk-d2-13"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Cherenkov light, IceCube, and the neutrino sky</div><div class="vh-spk">Cao Van Son <span class="vh-aff">(IFIRSE, ICISE)</span></div>
+      <!-- d2-13: paste the slides URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
+<tr class="vh-pause"><td class="vh-time">16:50 – 17:00</td><td colspan="1">Short break</td></tr>
+<tr><td class="vh-time">17:00 – 17:40</td><td><div class="vh-talk" id="talk-d2-14"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Classical aspects of higher-form symmetries</div><div class="vh-spk">Siye Wu <span class="vh-aff">(National Tsing Hua Univ., Taiwan)</span> <span class="vh-online">online</span></div>
+      <!-- d2-14: paste the slides URL into href below -->
       <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr></tbody>
 </table></div></div>
 
 <div class="vh-day" id="vh-d3"><h3 class="vh-dayhead">Friday <span>27 November 2026</span></h3>
-<h4 class="vh-sess">Plenary session 3</h4><div class="vh-scroll"><table class="vh-table"><thead>
-<tr><th class="vh-time">Time</th><th>Main hall</th></tr></thead><tbody>
-<tr class="vh-pause"><td class="vh-time">09:00 – 09:30</td><td colspan="1">Coffee/tea</td></tr>
-<tr><td class="vh-time">09:30 – 10:20</td><td><div class="vh-talk" id="talk-d3-01"><span class="vh-kind vh-inv">Invited</span><div class="vh-title vh-tba">A dynamical Minkowski spacetime - Standard Model without internal symmetry?</div><div class="vh-spk">Nguyễn Thế Toàn <span class="vh-aff">(HUS, VNU)</span></div>
+<h4 class="vh-sess">Parallel session</h4><div class="vh-scroll"><table class="vh-table vh-par"><thead>
+<tr><th class="vh-time">Time</th><th>Session A<small>Main hall</small></th><th>Session B<small>Room 315</small></th></tr></thead><tbody>
+<tr class="vh-pause"><td class="vh-time">08:00 – 08:30</td><td colspan="2">Coffee/tea</td></tr>
+<tr><td class="vh-time">08:30 – 09:10</td><td><div class="vh-talk" id="talk-d3-01"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">From discovery to precision: neutrino physics in Japan with Super-Kamiokande, T2K, and Hyper-Kamiokande</div><div class="vh-spk">Tran Van Ngoc <span class="vh-aff">(IFIRSE, ICISE)</span></div>
       <!-- d3-01: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr class="vh-pause"><td class="vh-time">10:20 – 10:50</td><td colspan="1">Coffee break</td></tr>
-<tr><td class="vh-time"><span class="vh-tba">TBA</span></td><td><div class="vh-talk" id="talk-d3-02"><span class="vh-kind vh-inv">Invited</span><div class="vh-title vh-tba">Title TBA</div><div class="vh-spk">TBA</div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d3-02"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Unfolding method for overlapping peaks induced by light charged particles and <sup>19</sup>F(p,α<sub>0</sub>)<sup>16</sup>O reaction excitation functions with E<sub>p</sub> = 0.5–3.2 MeV</div><div class="vh-spk">Le Xuan Chung <span class="vh-aff">(Vinatom)</span></div>
       <!-- d3-02: paste the slides URL into href below -->
       <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr class="vh-pause"><td class="vh-time"><span class="vh-tba">TBA</span></td><td colspan="1">Break</td></tr></tbody>
-</table></div>
-<h4 class="vh-sess">Parallel session 3</h4><div class="vh-scroll"><table class="vh-table vh-par"><thead>
-<tr><th class="vh-time">Time</th><th>Session A — Quantum Information &amp; Computing<small>Main hall</small></th><th>Session B — Public Science Lectures<small>Room TBA</small></th></tr></thead><tbody>
-<tr><td class="vh-time">10:50 – 11:40</td><td><div class="vh-talk" id="talk-d3-03"><span class="vh-kind vh-inv">Invited</span><div class="vh-title vh-tba">Title TBA</div><div class="vh-spk">Nguyễn Quốc Hưng <span class="vh-aff">(HUS, VNU)</span></div>
+<tr><td class="vh-time">09:10 – 09:50</td><td><div class="vh-talk" id="talk-d3-03"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Searches for charged lepton flavor violation: current status and future prospects</div><div class="vh-spk">Dong Van Thanh <span class="vh-aff">(HUST)</span></div>
       <!-- d3-03: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d3-04"><span class="vh-kind vh-inv">Invited</span><div class="vh-title vh-tba">Title TBA</div><div class="vh-spk">Đào Tiến Khoa <span class="vh-aff">(INST, Hanoi)</span></div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d3-04"><span class="vh-kind vh-inv">Invited</span><div class="vh-title">Charged pion femtoscopy in Au+Au collisions at √<span class="vh-ov">s</span><sub>NN</sub> = 3.0–7.7 GeV in the STAR experiment at RHIC</div><div class="vh-spk">Luong Ba Vinh <span class="vh-aff">(JINR, STAR Collaboration)</span></div>
       <!-- d3-04: paste the slides URL into href below -->
       <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr class="vh-pause"><td class="vh-time">11:40 – 14:00</td><td colspan="2">Lunch</td></tr>
-<tr><td class="vh-time">14:00 – 14:50</td><td><div class="vh-talk" id="talk-d3-05"><span class="vh-kind vh-inv">Invited</span><div class="vh-title vh-tba">Quantum Simulation for High-Energy Physics: Exploring CP Violation and the Peccei-Quinn Mechanism</div><div class="vh-spk">Lê Bin Hô <span class="vh-aff">(Tohoku Univ.)</span></div>
+<tr class="vh-pause"><td class="vh-time">09:50 – 10:20</td><td colspan="2">Coffee break</td></tr>
+<tr><td class="vh-time">10:20 – 10:45</td><td><div class="vh-talk" id="talk-d3-05"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">A unified framework to study the <i>f</i>-family of modified gravity theories</div><div class="vh-spk">Saikat Chakraborty <span class="vh-aff">(Duy Tan Univ.)</span></div>
       <!-- d3-05: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d3-06"><span class="vh-kind vh-inv">Invited</span><div class="vh-title vh-tba">Title TBA</div><div class="vh-spk">Speaker TBA</div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d3-06"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Interference geometry of contextuality and nonlocality in qubit–qutrit odd-cycle systems</div><div class="vh-spk">Nguyen Quoc Hung <span class="vh-aff">(VNU-HUS)</span></div>
       <!-- d3-06: paste the slides URL into href below -->
       <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr><td class="vh-time"><span class="vh-tba">TBA</span></td><td><div class="vh-talk" id="talk-d3-07"><span class="vh-kind vh-oral">Talk</span><div class="vh-title">New evidence from a hybrid-asymmetrical double-slit experiment for verification of the complementarity principle of wave–particle duality</div><div class="vh-spk">Võ Văn Thuận <span class="vh-aff">(Duy Tan Univ.)</span></div>
+<tr><td class="vh-time">10:45 – 11:10</td><td><div class="vh-talk" id="talk-d3-07"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Metric variation of the energy–momentum tensor of a perfect fluid and its applications to cosmology and neutron stars</div><div class="vh-spk">Pham Van Ky <span class="vh-aff">(IOP, VAST)</span></div>
       <!-- d3-07: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td class="vh-empty"></td></tr>
-<tr><td class="vh-time"><span class="vh-tba">TBA</span></td><td><div class="vh-talk" id="talk-d3-08"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Optimal coexistence of odd-cycle KCBS contextuality and CHSH nonlocality</div><div class="vh-spk">Nguyễn Khải <span class="vh-aff">(HUS, VNU)</span></div>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d3-08"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Optimal coexistence of odd-cycle KCBS contextuality and CHSH nonlocality</div><div class="vh-spk">Nguyen Khai <span class="vh-aff">(VNU-HUS)</span></div>
       <!-- d3-08: paste the slides URL into href below -->
-      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td class="vh-empty"></td></tr>
-<tr class="vh-pause"><td class="vh-time">14:50 – 15:00</td><td colspan="2">Closing remarks</td></tr></tbody>
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
+<tr><td class="vh-time">11:10 – 11:35</td><td><div class="vh-talk" id="talk-d3-09"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">New evidence from a hybrid-asymmetrical double-slit experiment for verification of the complementarity principle of wave–particle duality</div><div class="vh-spk">Vo Van Thuan <span class="vh-aff">(Duy Tan Univ.)</span></div>
+      <!-- d3-09: paste the slides URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d3-10"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Quantum key distribution: principles and the BB84 protocol</div><div class="vh-spk">Tran Hai Anh <span class="vh-aff">(Tohoku Univ.)</span></div>
+      <!-- d3-10: paste the slides URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
+<tr class="vh-pause"><td class="vh-time">11:35 – 14:00</td><td colspan="2">Lunch</td></tr></tbody>
+</table></div>
+<h4 class="vh-sess">Poster session</h4><div class="vh-scroll"><table class="vh-table"><thead>
+<tr><th class="vh-time">Time</th><th>Lobby</th></tr></thead><tbody>
+<tr class="vh-pause"><td class="vh-time">14:00 – 15:05</td><td colspan="1">Poster session — see the <a href="#vh-posters">list of posters</a></td></tr>
+<tr class="vh-pause"><td class="vh-time">15:05 – 15:35</td><td colspan="1">Coffee break</td></tr></tbody>
+</table></div>
+<h4 class="vh-sess">Public science lectures (in Vietnamese)</h4><div class="vh-scroll"><table class="vh-table"><thead>
+<tr><th class="vh-time">Time</th><th>Main hall <small>Posters remain on display in the lobby</small></th></tr></thead><tbody>
+<tr><td class="vh-time">15:35 – 16:15</td><td><div class="vh-talk" id="talk-d3-11"><span class="vh-kind vh-lec">Public lecture</span><div class="vh-title">Bí mật của vật chất ẩn giấu trong hạt cơ bản: từ nguyên tử đến quark</div><div class="vh-spk">Nguyễn Ái Việt <span class="vh-aff">(IGNITE)</span></div>
+      <!-- d3-11: paste the slides URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
+<tr class="vh-pause"><td class="vh-time">16:15 – 16:25</td><td colspan="1">Short break</td></tr>
+<tr><td class="vh-time">16:25 – 17:05</td><td><div class="vh-talk" id="talk-d3-12"><span class="vh-kind vh-lec">Public lecture</span><div class="vh-title">Câu chuyện về sao neutron, neutrino và các tên tuổi Nobel vật lý liên quan</div><div class="vh-spk">Đào Tiến Khoa <span class="vh-aff">(INST, Vinatom)</span></div>
+      <!-- d3-12: paste the slides URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
+<tr class="vh-pause"><td class="vh-time">17:05 – 17:20</td><td colspan="1">Closing remarks</td></tr></tbody>
 </table></div></div>
 	  
 	 <p> The general program of the meeting consists of the following Sections:</p>
@@ -738,9 +757,33 @@ The meeting will cover (but is not limited to) the following topics:
 	  <!--p>To upload slides, please use this link <a href="https://ifirse.icise.vn/nugroup/meeting/pgu2025.php">File Uploading (ask organizer for the passcode)</a></p-->
   
     
-        <h3>List of posters</h3>
-  
-  </ol>
+        <h3 id="vh-posters" class="vh-posthead">List of posters</h3>
+<ol class="vh-posters">
+<li id="poster-01"><div class="vh-title">Five-dimensional black holes in dRGT massive gravity with power Yang–Mills source</div><div class="vh-spk">Phung Huy Hieu <span class="vh-aff">(PIAS)</span></div>
+      <!-- poster-01: paste the poster URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Poster</a></li>
+<li id="poster-02"><div class="vh-title">Vector-like fermion decays in Standard Model extensions</div><div class="vh-spk">Tran Trung Phong <span class="vh-aff">(HUST)</span></div>
+      <!-- poster-02: paste the poster URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Poster</a></li>
+<li id="poster-03"><div class="vh-title">Two-component dark matter from a flavor-dependent U(1) gauge extension</div><div class="vh-spk">Nguyen Tuan Duy <span class="vh-aff">(IOP, VAST)</span></div>
+      <!-- poster-03: paste the poster URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Poster</a></li>
+<li id="poster-04"><div class="vh-title">Improving photon-number resolution with pole-zero cancellation in SiPM front-end electronics</div><div class="vh-spk">Truong Thanh Sang <span class="vh-aff">(ICISE)</span></div>
+      <!-- poster-04: paste the poster URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Poster</a></li>
+<li id="poster-05"><div class="vh-title">Investigation of a compact muon tomography system</div><div class="vh-spk">Vo Diep Trung Tin <span class="vh-aff">(IFIRSE, ICISE)</span></div>
+      <!-- poster-05: paste the poster URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Poster</a></li>
+<li id="poster-06"><div class="vh-title">Development and characterization of an acrylic-based mini-Cherenkov detector for cosmic-ray muons</div><div class="vh-spk">Vo Diep Trung Tin <span class="vh-aff">(IFIRSE, ICISE)</span></div>
+      <!-- poster-06: paste the poster URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Poster</a></li>
+<li id="poster-07"><div class="vh-title">Study of the correlation between high-energy muons and neutrinos in extensive air showers at IceCube observation level</div><div class="vh-spk">Pham Phuong Anh <span class="vh-aff">(USTH)</span></div>
+      <!-- poster-07: paste the poster URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Poster</a></li>
+<li id="poster-08"><div class="vh-title">Preliminary measurement of the transverse polarization of Λ and <span class="vh-ov">Λ</span> in p<span class="vh-ov">p</span> collisions at √s = 7 TeV in the LHCb experiment</div><div class="vh-spk">Ha Chau Giang <span class="vh-aff">(VNU)</span></div>
+      <!-- poster-08: paste the poster URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Poster</a></li>
+</ol>
 
   </section>
 
