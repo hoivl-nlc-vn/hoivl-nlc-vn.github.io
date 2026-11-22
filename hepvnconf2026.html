@@ -565,8 +565,12 @@ The meeting will cover (but is not limited to) the following topics:
  <h2> Tentative Program (Nov. 25–27,2026)</h2>
 	     <!--p>Tenative program can be found at <a href="">PGU3 Scientific Program (📄 pdf)</a>
   </p-->
-<p class="vh-note">Tentative program — times may still change. Invited talks: 40 min; oral talks: 25 min (including discussion). Times in Hanoi local time (UTC+7).</p>
-<div class="vh-daynav"><a href="#vh-d1">Wed 25 Nov</a><a href="#vh-d2">Thu 26 Nov</a><a href="#vh-d3">Fri 27 Nov</a><a href="#vh-posters">Posters</a></div>
+<p class="vh-note">Tentative program — times may still change. Invited talks: 40 min; oral talks: 25 min (including discussion). Times in Hanoi local time (UTC+7). <b>Speakers:</b> please upload your slides on the <a href="https://ifirse.icise.vn/nugroup/meeting/vhem2026.php">speaker slides portal</a>.</p>
+<p>Zoom connection for remote talk and participation: <a href="https://zoom.us/j/95544733215?pwd=YNdsQZ6AKSg668XOJbEiEkNAZGxxPj.1">Zoom connection</a>
+Meeting ID: 955 4473 3215</br>
+Passcode: 938822</br>
+</p>
+	<div class="vh-daynav"><a href="#vh-d1">Wed 25 Nov</a><a href="#vh-d2">Thu 26 Nov</a><a href="#vh-d3">Fri 27 Nov</a><a href="#vh-posters">Posters</a></div>
 
 <div class="vh-day" id="vh-d1"><h3 class="vh-dayhead">Wednesday <span>25 November 2026</span></h3>
 <h4 class="vh-sess">Opening</h4><div class="vh-scroll"><table class="vh-table"><thead>
@@ -603,7 +607,7 @@ The meeting will cover (but is not limited to) the following topics:
       <!-- d1-07: paste the slides URL into href below -->
       <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
 <tr class="vh-pause"><td class="vh-time">15:30 – 16:00</td><td colspan="2">Coffee break</td></tr>
-</table></div></div>
+</tbody></table></div>
 <h4 class="vh-sess">Parallel session</h4><div class="vh-scroll"><table class="vh-table vh-par"><thead>	
 <tr><th class="vh-time">Time</th><th>Session A / Chair: Cao Van Son <small> Main hall </small></th><th>Session B / Chair: Nguyen Quang Hung <small> Room 315</small></th></tr></thead><tbody>
 
@@ -717,10 +721,9 @@ The meeting will cover (but is not limited to) the following topics:
       <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d3-10"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">Quantum key distribution: principles and the BB84 protocol</div><div class="vh-spk">Tran Hai Anh <span class="vh-aff">(Tohoku Univ.)</span></div>
       <!-- d3-10: paste the slides URL into href below -->
       <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td></tr>
-<tr><td class="vh-time">11:35 – 12:00</td><td><div class="vh-talk" id="talk-d3-05"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">A unified framework to study the <i>f</i>-family of modified gravity theories</div><div class="vh-spk">Saikat Chakraborty <span class="vh-aff">(Duy Tan Univ.)</span></div>
-<a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td><div class="vh-talk" id="talk-d3-10"></div>
-      <!-- d3-10: paste the slides URL into href below -->
- </div></td></tr>
+<tr><td class="vh-time">11:35 – 12:00</td><td><div class="vh-talk" id="talk-d3-13"><span class="vh-kind vh-oral">Oral</span><div class="vh-title">A unified framework to study the <i>f</i>-family of modified gravity theories</div><div class="vh-spk">Saikat Chakraborty <span class="vh-aff">(Duy Tan Univ.)</span></div>
+<!-- d3-13: paste the slides URL into href below -->
+      <a class="vh-slides" href="" target="_blank" rel="noopener">Slides</a></div></td><td class="vh-empty"></td></tr>
 <tr class="vh-pause"><td class="vh-time">12:00 – 14:00</td><td colspan="2">Lunch</td></tr></tbody>
 </table></div>
 <h4 class="vh-sess">Public science lectures (in Vietnamese) / Chair: Nguyen Thi Hong Van</h4><div class="vh-scroll"><table class="vh-table"><thead>
@@ -1120,6 +1123,27 @@ Nguyen Thi Hong Van,"Institute of Physics, Hanoi",Vietnam
   }
 </style>
 
+
+<!-- Fill "Slides" buttons from the speaker slides portal. Reads the JSON feed of the PHP slides portal on the IFIRSE server.
+     A link typed by hand into href="" always takes priority. -->
+<script>
+(function () {
+  var SLIDES_API = "https://ifirse.icise.vn/nugroup/meeting/vhem2026.php?format=json";
+  if (!SLIDES_API) return;
+  fetch(SLIDES_API).then(function (r) { return r.json(); }).then(function (d) {
+    var latest = {};
+    (d.items || []).forEach(function (it) {
+      if (it.talkId && (!latest[it.talkId] || +it.id > +latest[it.talkId].id)) latest[it.talkId] = it;
+    });
+    Object.keys(latest).forEach(function (k) {
+      var el = document.getElementById(k.indexOf("poster") === 0 ? k : "talk-" + k);
+      var a = el && el.querySelector("a.vh-slides");
+      var url = latest[k].fileUrl || latest[k].link;
+      if (a && !a.getAttribute("href") && /^https?:\/\//.test(url)) a.setAttribute("href", url);
+    });
+  }).catch(function () {});
+})();
+</script>
 </body>
 </html>
 
